@@ -10,6 +10,7 @@ driver.find_element_by_css_selector("#name").send_keys("validate")
 driver.find_element_by_id("alertbtn").click()
 time.sleep(3)
 alert = driver.switch_to.alert
+alert2 = driver.switch_to.alert
 validate = alert.text
 assert validate in alert.text
 alert.accept()
